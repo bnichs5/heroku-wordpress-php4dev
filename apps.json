@@ -1,0 +1,51 @@
+{
+	"name": "Wordpress for He_ro_ku",
+	"description": "Based on Wordpress Version 5.6",
+	"repository": "https://github.com/d/wp",
+	"logo": "https://s.w.org/style/images/about/WordPress-logotype-simplified.png",
+	"keywords": ["wordpress", "heroku", "mysql", "php", "apache2", "nginx"],
+  
+    "env": {
+    "DB_HOST": {
+	"description": "MySql Database Host",
+	"value":""
+		},
+    "DB_NAME": {
+	"description": "MySql Database Name",
+	"value":""
+		},
+     "DB_USER": {
+	"description": "MySql Database Username",
+	"value":""
+		},
+     "DB_PASSWORD": {
+	"description": "MySql Database Password",
+	"value":""
+        },
+      
+       "XAUTH_KEY": {
+		 "generator": "secret"
+			  },
+	   "XSECURE_AUTH_KEY": {	
+		    "generator": "secret"
+		  },
+	   "XLOGGED_IN_KEY": {		   
+      "generator": "secret"
+		  },
+	   "XNONCE_KEY": {		   
+		    "generator": "secret"
+		  },
+	   "XAUTH_SALT": {		   
+		    "generator": "secret"
+		  },
+	   "XSECURE_AUTH_SALT": {		   
+		    "generator": "secret"
+		  },
+	   "XLOGGED_IN_SALT": {		   
+		    "generator": "secret"
+		  },
+	   "XNONCE_SALT": {		   
+		    "generator": "secret"
+		  }
+   }	   
+}
